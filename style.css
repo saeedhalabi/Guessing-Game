@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #FF512F, #DD2476);
+  overflow: hidden;
+}
+
+.number-guess {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 170px;
+}
+
+#guessField {
+ margin-left: 19rem;
+ transform: translateX(-18rem);
+ margin-top: 50px;
+ border-radius: 9px;
+ border: none;
+ outline: none;
+ padding: 10px 12px;
+ text-align: center;
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#submitButton {
+  margin-left: 25px;
+  transform: translateX(-18rem);
+  border: none;
+  outline: none;
+  padding: 4px;
+  border-radius: 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
+}
+
+#submitButton:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+label {
+  padding-left: 20rem;
+}
+
+p {
+  padding-left: 20rem;
+  transform: translateY(20px);
+}
+
+span {
+  color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media (max-width: 576px) {
+  body {
+    min-height: 100vh;
+  }
+  .number-guess {
+    transform: translateX(55px);
+  }
+
+  #submitButton {
+    transform: translateX(220px);
+    position: relative;
+    bottom: 36px;
+  }
+ #guessField {
+  margin-top: 100px;
+ }
+
+  label {
+    position: relative;
+    left: 100rem;
+  }
+
+  p {
+    position: absolute;
+    right: 200px;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .number-guess {
+    transform: translateX(-2px);
+  }
+}
